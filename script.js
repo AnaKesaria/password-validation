@@ -54,8 +54,8 @@ function validateUsername(username) {
   }
 
   // Maximum length (real app style)
-  if (username.length > 15) {
-    usernameMsg.textContent = "Username must not exceed 15 characters.";
+  if (username.length > 50) {
+    usernameMsg.textContent = "Username must not exceed 50 characters.";
     return false;
   }
 
