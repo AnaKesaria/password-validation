@@ -42,7 +42,7 @@ function validateUsername(username) {
   usernameMsg.textContent = "";
 
   // Only letters allowed
-  if (!/^[A-Za-z]+$/.test(username)) {
+  if (!/^[A-Za-zა-ჰ]+$/.test(username)) {
     usernameMsg.textContent = "Username must contain only letters.";
     return false;
   }
