@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Validation</h1>
+
+        <!-- Start of form -->
+        <form id="signInForm" novalidate>
+            
+            <!-- Username -->
+            <input type="text" id="usernameInput" name="username" placeholder="Enter your username" maxlength="50">
+            <span id="usernameMsg" class="popup-msg"></span>
+            
+            <!-- Password -->
+            <div class="input-password relative">
+                <input type="password" id="passInput" name="password" placeholder="Enter password" maxlength="20">
+                <span id="passwordMsg" class="popup-msg"></span>
+                
+                <!-- Eye toggle button -->
+                <button type="button" id="eye-toggle-btn" aria-label="Show password">
+                    <svg id="eye-toggle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                         viewBox="0 0 24 24" fill="none">
+                        <!-- Eye outline -->
+                        <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" 
+                              stroke="#1D798B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Iris / pupil -->
+                        <circle cx="12" cy="12" r="3" stroke="#1D798B" stroke-width="1.5"/>
+                        <!-- Slash overlay -->
+                        <path id="eye-slash-line" d="M2 2L22 22" stroke="#1D798B" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Sign in button -->
+            <button type="submit" id="signInBtn">Sign In</button>
+
+        </form>
+        <!-- End of form -->
+
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

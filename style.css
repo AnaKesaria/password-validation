@@ -1,0 +1,92 @@
+* {       
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* we do this so that default eye toggle button is hidden */
+/* Chrome, Safari, Edge, Opera */
+input[type="password"]::-webkit-password-toggle-button {
+    display: none;
+}
+
+/* Microsoft Edge / IE */
+input::-ms-reveal {
+    display: none;
+}
+
+/* Firefox (optional) */
+input[type="password"]::-moz-password-toggle-button {
+    display: none;
+}
+
+.relative{
+    position: relative;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #1CB5E0, #000046);
+}
+.wrapper{
+    width:100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #333;
+}
+.wrapper input{
+    width: 100%;
+    padding: 20px;
+    font-size: 18px; 
+    margin-bottom: 20px;
+    height: 50px;
+
+}
+.wrapper ul{
+    list-style: none;
+}
+
+#signInBtn{
+    width: 100px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #1CB5E0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;       /* make it a block element */
+    margin: 20px auto 0;  /* top margin 20px, auto left/right to center */
+}
+#eye-toggle-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border:none;
+    background-color: none;
+}
+#eye-toggle-btn:hover{
+    opacity: 0.7;
+}
+.popup-msg {
+  color: red;
+  font-size: 20px;
+  margin-left: 5px;
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+}
+.valid-msg {
+  color: green;
+}
+
